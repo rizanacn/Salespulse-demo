@@ -62,7 +62,7 @@ function orderTotal(order) {
 }
 
 function totalRevenue(orderList) {
-  return orderList.reduce((total, order) => total + orderTotal(order));
+  return orderList.reduce((total, order) => total + orderTotal(order),0);
 }
 
 console.log("total Revenue", totalRevenue(order));
